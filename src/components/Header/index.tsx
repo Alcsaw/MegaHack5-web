@@ -8,7 +8,11 @@ import logoImg from '../../assets/logo_red.webp';
 import { Container, HeaderContent, ProductsSearch, SearchInput, SearchButton } from './styles';
 import api from '../../services/api';
 
-const Header: React.FC = () => {
+interface IHeaderProps {
+  openModal: () => void;
+}
+
+const Header: React.FC<IHeaderProps> = ({ openModal }) => {
   const [searchText, setSearchText] = useState('');
 
   async function handleSearch(
@@ -40,7 +44,9 @@ const Header: React.FC = () => {
           </SearchButton>
         </ProductsSearch>
 
-        <FiHeart size={24} style={{ marginLeft: 25 }} />
+        <button type="button" onClick={openModal}>
+          <FiHeart size={24} style={{ marginLeft: 25 }} />
+        </button>
 
         <FiShoppingBag size={24} style={{ marginLeft: 25 }} />
       </HeaderContent>

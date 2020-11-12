@@ -40,5 +40,7 @@ export default createGlobalStyle`
     --gray: #D6D6D6;
     --hover-gray: #333333;
     --scrollbar-gb: #999999;
+    --modal-black: #2A2A2A;
+    --modal-gray: #f5f5f5;
   }
 `;
