@@ -76,3 +76,8 @@ export const SearchButton = styled.button`
   background: transparent;
   border: none;
 `;
+
+export const HeaderButton = styled.button`
+  border: none;
+  background: transparent;
+`;

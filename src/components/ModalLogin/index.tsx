@@ -1,8 +1,9 @@
 import React, { useRef, useCallback } from 'react';
+import { FiUser, FiKey } from 'react-icons/fi';
 
 import Modal from '../Modal';
 
-import { LoginForm, Header, Input } from './styles';
+import { LoginForm, Button, Header, Input, InputContainer, Footer } from './styles';
 
 interface IModalProps {
   isOpen: boolean;
@@ -31,14 +32,22 @@ const ModalLogin: React.FC<IModalProps> = ({
 
       <LoginForm onSubmit={handleSubmit}>
 
-        <Input type="email" placeholder="e-mail ou CPF" />
+        <InputContainer>
+          <FiUser />
+          <Input type="email" placeholder="e-mail ou CPF" />
+        </InputContainer>
 
-        <Input type="password" placeholder="senha" />
+        <InputContainer>
+          <FiKey />
+          <Input type="password" placeholder="senha" />
+        </InputContainer>
 
-        <button type="submit">
-          <p className="text">ENTRAR</p>
-        </button>
+        <Button type="submit">ENTRAR</Button>
       </LoginForm>
+
+      <Footer>
+        <Button>Quero me cadastrar</Button>
+      </Footer>
     </Modal>
   );
 };

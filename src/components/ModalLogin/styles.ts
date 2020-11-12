@@ -10,25 +10,25 @@ export const LoginForm = styled.form`
 
   button {
     margin-top: 48px;
-    align-self: flex-end;
   }
 
-  button {
-    border: 0;
-    background: var(--modal-black);
-    color: #fff;
+`;
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+export const Button = styled.button`
+  border: 0;
+  background: var(--modal-black);
+  color: var(--white);
+  text-transform: uppercase;
 
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
-    .text {
-      padding: 16px 24px;
-      font-size: 14px;
-    }
-  }
+  width: 100%;
+
+  padding: 16px 24px;
+  font-size: 14px;
+  justify-content: center;
 `;
 
 export const Header = styled.div`
@@ -43,6 +43,34 @@ export const Header = styled.div`
   letter-spacing: 2.2px;
 `;
 
+export const InputContainer = styled.div`
+  border: none;
+  border-bottom: 2px solid var(--modal-black);
+  margin: 25px auto 0 auto;
+  width: 100%;
+
+  display: flex;
+  align-items:center;
+  justify-content: space-between
+
+  svg {
+    margin-right: 10px;
+  }
+`;
+
 export const Input = styled.input`
-  margin: 25 auto 0 auto;
+  border: none;
+  padding: 15px 15px 10px 15px;
+  width: 100%;
+  margin-left: 10px;
+`;
+
+export const Footer = styled.footer`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--modal-gray);
+  padding: 25px 40px;
+  margin: 48px 0 0 0;
 `;

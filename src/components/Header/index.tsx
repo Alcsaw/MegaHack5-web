@@ -5,7 +5,7 @@ import { FiHeart, FiShoppingBag, FiSearch } from 'react-icons/fi';
 import TopBanner from '../TopBanner';
 import logoImg from '../../assets/logo_red.webp';
 
-import { Container, HeaderContent, ProductsSearch, SearchInput, SearchButton } from './styles';
+import { Container, HeaderContent, ProductsSearch, SearchInput, SearchButton, HeaderButton } from './styles';
 import api from '../../services/api';
 
 interface IHeaderProps {
@@ -44,11 +44,13 @@ const Header: React.FC<IHeaderProps> = ({ openModal }) => {
           </SearchButton>
         </ProductsSearch>
 
-        <button type="button" onClick={openModal}>
+        <HeaderButton type="button" onClick={openModal}>
           <FiHeart size={24} style={{ marginLeft: 25 }} />
-        </button>
+        </HeaderButton>
 
-        <FiShoppingBag size={24} style={{ marginLeft: 25 }} />
+        <HeaderButton type="button" onClick={openModal}>
+          <FiShoppingBag size={24} style={{ marginLeft: 25 }} />
+        </HeaderButton>
       </HeaderContent>
     </Container>
   );
