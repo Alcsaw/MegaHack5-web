@@ -25,7 +25,7 @@ export const Header = styled.p`
 export const StylesGrid = styled.ul`
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 2rem;
   width: 100%;
   padding: 2rem;
@@ -53,4 +53,5 @@ export const StyleItem = styled.li<LiProps>`
 
 export const StyleCard = styled.img`
   width: 100%;
+  max-width: 600px;
 `;
