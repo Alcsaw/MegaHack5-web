@@ -9,6 +9,7 @@ import eleganteImg from '../../assets/styles/card_elegante.webp';
 import coolImg from '../../assets/styles/card_cool.webp';
 import relaxImg from '../../assets/styles/card_relax.webp';
 import Banner from '../../components/Banner';
+import OnboardingForm from '../../components/OnboardingForm';
 
 const Onboarding: React.FC = () => {
   const [selectedStyle, setSelectedStyle] = useState('');
@@ -56,6 +57,8 @@ const Onboarding: React.FC = () => {
           <StyleCard src={relaxImg} alt="Estilo Relax" />
         </StyleItem>
       </StylesGrid>
+
+      <OnboardingForm />
     </Container>
   );
 }

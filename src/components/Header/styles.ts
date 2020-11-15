@@ -8,6 +8,7 @@ export const Container = styled.div`
 
   border-bottom: 1px solid #eaeaea;
   box-shadow: 0 0 25px rgba(0,0,0,0.25);
+  overflow: hidden;
 `;
 
 export const HeaderContent = styled.div`

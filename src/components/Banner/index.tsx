@@ -1,6 +1,6 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import { Figure } from './styles';
 
 interface BannerProps {
   img: string;
@@ -8,9 +8,9 @@ interface BannerProps {
 
 const Banner: React.FC<BannerProps> = ({ img }) => {
   return (
-    <figure>
+    <Figure>
       <img src={img} alt="Banner Meu Estilo" />
-    </figure>
+    </Figure>
   );
 }
 
